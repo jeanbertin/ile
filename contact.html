@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Institut Lya Ethan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="entete">
+    <div class="conteneur entete-contenu">
+      <a class="logo-lien" href="index.html">
+        <img src="images/logo.png" alt="Logo de l'Institut Lya Ethan">
+        <span>Institut Lya Ethan</span>
+      </a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-bouton" aria-label="Ouvrir le menu">☰</label>
+      <nav class="menu">
+        <a href="index.html">Accueil</a>
+        <a href="presentation.html">Présentation</a>
+        <a href="formations.html">Formations</a>
+        <a href="actualites.html">Actualités</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="contact.html" class="actif">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="bandeau">
+      <div class="conteneur"><h1>Contactez-nous</h1></div>
+    </section>
+
+    <section class="section">
+      <div class="conteneur contact-grille">
+
+        <!-- ===== COLONNE GAUCHE : COORDONNÉES ===== -->
+        <div>
+          <h2>Nos coordonnées</h2><br>
+          <p>📍 <strong>Adresse :</strong> Arrêt Chambre froide, Djiri, Kintélé</p>
+          <p>📞 <strong>Téléphone :</strong> <a href="tel:+242069133892">+242 06 913 38 92</a></p>
+          <p>✉️ <strong>E-mail :</strong> <a href="mailto:institutlyaethan@gmail.com">institutlyaethan@gmail.com</a></p>
+          <br>
+
+          <h3>Horaires</h3>
+          <table class="horaires">
+            <tr><td>Lundi – Vendredi</td><td>8h00 – 15h30</td></tr>
+            <tr><td>Pause méridienne</td><td>13h00 – 14h00</td></tr>
+            <tr><td>Samedi – Dimanche</td><td>Fermé</td></tr>
+          </table>
+          <br>
+
+          <!-- Lien WhatsApp : wa.me/ + numéro sans « + » ni espaces.
+               Le paramètre ?text= pré-remplit le message. -->
+          <a class="bouton bouton-whatsapp"
+             href="https://wa.me/242069133892?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20l%27Institut%20Lya%20Ethan."
+             target="_blank" rel="noopener">💬 Écrire sur WhatsApp</a>
+          <br><br>
+
+          <!-- Lien vers Google Maps (recherche de l'adresse) -->
+          <a class="bouton"
+             href="https://www.google.com/maps/search/?api=1&query=Chambre+froide+Djiri+Kintele+Brazzaville"
+             target="_blank" rel="noopener">🗺️ Voir sur la carte</a>
+        </div>
+
+        <!-- ===== COLONNE DROITE : FORMULAIRE ===== -->
+        <div>
+          <h2>Envoyez-nous un message</h2>
+
+          <!--
+            FORMULAIRE EN HTML SEUL :
+            action="mailto:..." ouvre le logiciel de messagerie du visiteur avec le
+            message déjà rempli, adressé à l'institut.
+            enctype="text/plain" garde le texte lisible.
+
+            POUR UN ENVOI AUTOMATIQUE (sans logiciel de messagerie), toujours sans JavaScript :
+            créer un compte gratuit sur formspree.io puis remplacer l'action par :
+            action="https://formspree.io/f/VOTRE_IDENTIFIANT" method="POST"
+          -->
+          <form class="formulaire" action="mailto:institutlyaethan@gmail.com"
+                method="post" enctype="text/plain">
+
+            <label for="nom">Nom et prénom</label>
+            <input type="text" id="nom" name="Nom" required>
+
+            <label for="tel">Téléphone</label>
+            <input type="tel" id="tel" name="Telephone">
+
+            <label for="email">Adresse e-mail</label>
+            <input type="email" id="email" name="Email" required>
+
+            <label for="sujet">Sujet</label>
+            <select id="sujet" name="Sujet">
+              <option>Demande d'inscription</option>
+              <option>Renseignements sur les cycles</option>
+              <option>Navette scolaire</option>
+              <option>Cantine</option>
+              <option>Autre</option>
+            </select>
+
+            <label for="message">Votre message</label>
+            <textarea id="message" name="Message" required></textarea>
+
+            <button type="submit" class="bouton">Envoyer le message</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur">
+      <div class="pied-grille">
+        <div><h3>Institut Lya Ethan</h3><p>Se former aujourd'hui pour bâtir demain.</p></div>
+        <div>
+          <h3>Contact</h3>
+          <p>📍 Arrêt Chambre froide, Djiri, Kintélé</p>
+          <p>📞 <a href="tel:+242069133892">+242 06 913 38 92</a></p>
+          <p>✉️ <a href="mailto:institutlyaethan@gmail.com">institutlyaethan@gmail.com</a></p>
+        </div>
+        <div><h3>Horaires</h3><p>Lundi – Vendredi : 8h00 – 15h30</p><p>Pause méridienne : 13h00 – 14h00</p></div>
+      </div>
+      <p class="copyright">© 2026 Institut Lya Ethan – Tous droits réservés</p>
+    </div>
+  </footer>
+  <a class="whatsapp-flottant" href="https://wa.me/242069133892?text=Bonjour%2C%20je%20souhaite%20des%20informations." target="_blank" rel="noopener">💬 WhatsApp</a>
+</body>
+</html>

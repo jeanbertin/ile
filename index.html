@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <!-- Indispensable pour l'affichage correct sur mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Institut Lya Ethan : école privée du cycle français et franco-congolais, de la maternelle au lycée, à Kintélé.">
+  <title>Accueil – Institut Lya Ethan</title>
+  <!-- Lien vers la feuille de style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== EN-TÊTE + MENU (identique sur toutes les pages) ===== -->
+  <header class="entete">
+    <div class="conteneur entete-contenu">
+      <a class="logo-lien" href="index.html">
+        <img src="images/logo.png" alt="Logo de l'Institut Lya Ethan">
+        <span>Institut Lya Ethan</span>
+      </a>
+      <!-- Case + bouton ☰ : ouvrent le menu sur mobile (sans JavaScript) -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-bouton" aria-label="Ouvrir le menu">☰</label>
+      <nav class="menu">
+        <!-- class="actif" met en évidence la page courante -->
+        <a href="index.html" class="actif">Accueil</a>
+        <a href="presentation.html">Présentation</a>
+        <a href="formations.html">Formations</a>
+        <a href="actualites.html">Actualités</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== BANDEAU D'ACCUEIL ===== -->
+    <section class="hero">
+      <div class="conteneur">
+        <p class="devise">Excellence – Discipline – Réussite</p>
+        <h1>Institut Lya Ethan</h1>
+        <p class="slogan">Se former aujourd'hui pour bâtir demain</p>
+        <a href="contact.html" class="bouton">Nous contacter</a>
+        <a href="formations.html" class="bouton">Découvrir nos cycles</a>
+      </div>
+    </section>
+
+    <!-- ===== MOT D'ACCUEIL ===== -->
+    <section class="section">
+      <div class="conteneur">
+        <h2 class="titre-section">Bienvenue à l'Institut Lya Ethan</h2>
+        <p class="texte-centre">
+          Établissement privé du cycle français et franco-congolais, l'Institut Lya Ethan
+          accompagne chaque enfant de la toute petite section jusqu'à la terminale.
+          Ouvert le 5 octobre 2026, il offre un cadre d'apprentissage exigeant,
+          rigoureux et bienveillant.
+        </p>
+        <div class="grille">
+          <div class="carte">
+            <div class="icone">🏆</div>
+            <h3>Excellence</h3>
+            <p>Un enseignement de qualité pour révéler le potentiel de chaque élève.</p>
+          </div>
+          <div class="carte vert">
+            <div class="icone">📏</div>
+            <h3>Discipline</h3>
+            <p>Le respect, la ponctualité et le travail sont les bases de la réussite.</p>
+          </div>
+          <div class="carte bleu">
+            <div class="icone">🎓</div>
+            <h3>Réussite</h3>
+            <p>Un accompagnement personnalisé vers les examens et l'avenir.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CYCLES (aperçu) ===== -->
+    <section class="section alterne">
+      <div class="conteneur">
+        <h2 class="titre-section">De la petite section à la terminale</h2>
+        <div class="grille">
+          <div class="carte"><h3>Préscolaire</h3><p>TPS, PS, MS, GS</p></div>
+          <div class="carte vert"><h3>Maternelle</h3><p>P1, P2, P3</p></div>
+          <div class="carte bleu"><h3>Primaire</h3><p>CP, CE1, CE2, CM1, CM2</p></div>
+          <div class="carte"><h3>Collège</h3><p>6e, 5e, 4e, 3e</p></div>
+          <div class="carte vert"><h3>Lycée</h3><p>Seconde, Première, Terminale</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="bloc-bleu">
+      <div class="conteneur chiffres">
+        <div><strong>5</strong>cycles d'enseignement</div>
+        <div><strong>🚌</strong>Navette scolaire</div>
+        <div><strong>🍽️</strong>Cantine</div>
+        <div><strong>8h – 15h30</strong>du lundi au vendredi</div>
+      </div>
+    </section>
+
+    <!-- ===== APPEL À L'ACTION ===== -->
+    <section class="section">
+      <div class="conteneur texte-centre">
+        <h2 class="titre-section">Inscrivez votre enfant</h2>
+        <p>Une question ? Écrivez-nous directement sur WhatsApp.</p><br>
+        <a class="bouton bouton-whatsapp"
+           href="https://wa.me/242069133892?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20l%27Institut%20Lya%20Ethan."
+           target="_blank" rel="noopener">💬 Écrire sur WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== PIED DE PAGE (identique sur toutes les pages) ===== -->
+  <footer class="pied">
+    <div class="conteneur">
+      <div class="pied-grille">
+        <div>
+          <h3>Institut Lya Ethan</h3>
+          <p>Se former aujourd'hui pour bâtir demain.</p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>📍 Arrêt Chambre froide, Djiri, Kintélé</p>
+          <p>📞 <a href="tel:+242069133892">+242 06 913 38 92</a></p>
+          <p>✉️ <a href="mailto:institutlyaethan@gmail.com">institutlyaethan@gmail.com</a></p>
+        </div>
+        <div>
+          <h3>Horaires</h3>
+          <p>Lundi – Vendredi : 8h00 – 15h30</p>
+          <p>Pause méridienne : 13h00 – 14h00</p>
+        </div>
+      </div>
+      <p class="copyright">© 2026 Institut Lya Ethan – Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <!-- Bouton WhatsApp flottant (visible sur toutes les pages) -->
+  <a class="whatsapp-flottant"
+     href="https://wa.me/242069133892?text=Bonjour%2C%20je%20souhaite%20des%20informations."
+     target="_blank" rel="noopener">💬 WhatsApp</a>
+
+</body>
+</html>
